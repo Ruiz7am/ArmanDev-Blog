@@ -1,4 +1,35 @@
-/* Estilos del encabezado */
+/* Version 1.0 del estilo */
+
+/* Reajuste de tamaño de fuente */
+html {
+    font-size: 62.5%;
+}
+
+/* Reset body */
+body {
+    box-sizing: border-box;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------
+
+
 :root {
     --background: #424040;
     --regular-font-color: white;
@@ -6,7 +37,7 @@
     --regular-font-family: "Chakra Petch", sans-serif;
     --titles: white;
     --subtitles: white;
-    /* --logo-fm: */
+ 
     --min: 14px;
     --sm: 16px;
     --md: 18px;
@@ -190,14 +221,6 @@ article {
 .contenido__more a:hover {
     color: blueviolet;
 }
-/*@media (max-width: 1530px) {
-    .main-container__bio {
-        flex-direction: column;
-    }
-    .main-container__content {
-        flex-direction: column;
-    }
-}*/
 @media (max-width: 640px) {
    .header-navbar {
     display: none;
@@ -214,4 +237,4 @@ article {
     .main-container__content {
         flex-direction: column;
     }
-}
+} */
