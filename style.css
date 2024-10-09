@@ -204,6 +204,8 @@ article {
    }
    body {
     display: grid;
+  } 
+   html {
     box-sizing: border-box;
    }
    .main-container__bio {
