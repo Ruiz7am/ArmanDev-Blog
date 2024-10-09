@@ -206,5 +206,6 @@ article {
    }
    body {
     display: grid;
+    box-sizing: border-box;
    }
 }
