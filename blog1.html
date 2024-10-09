@@ -13,47 +13,40 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-
-
 </head>
 <body>
-    <!-- <div class="background"> -->
     <!-- Cabecera -->
     <header>
         <!-- Redes sociales por arriba del header (logo y navbar) -->
-        <div class="social-container">
-                <a href="https://platzi.com/p/ArmandoRuiz/" target="_blank">
-                    <img src="./assets/icons/platzi-svgrepo-com.svg" alt="platzi">
-                </a>
-                <a href="https://github.com/Ruiz7am" target="_blank">
-                    <img src="./assets/icons/github-142-svgrepo-com.svg" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/ruiz7am" target="_blank">
-                    <img src="./assets/icons/linkedin-svgrepo-com.svg" alt="linkedin">
-                </a>
-                <a href="https://x.com/ruiz7am" target="_blank">
-                    <img src="./assets/icons/twitter-svgrepo-com.svg" alt="tweeter">
-                </a>
+        <div class="header-navbar">
+            <nav>
+                <ul>
+                    <li><a href="./index.html"><img src="./assets/icons/home-white.svg" alt="home"></a></li>
+                </ul>
+            </nav>
+            <div class="social-container">
+                    <a href="https://platzi.com/p/ArmandoRuiz/" target="_blank">
+                        <img src="./assets/icons/platzi-white.svg" alt="platzi">
+                    </a>
+                    <a href="https://github.com/Ruiz7am" target="_blank">
+                        <img src="./assets/icons/github-white.svg" alt="github">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ruiz7am" target="_blank">
+                        <img src="./assets/icons/linkedin-white.svg" alt="linkedin">
+                    </a>
+                    <a href="https://x.com/ruiz7am" target="_blank">
+                        <img src="./assets/icons/twitter-white.svg" alt="tweeter">
+                    </a>
+            </div>
         </div>
         <!-- Header: logo y navbar -->
         <div class="head">
-            <div class="main-logo">
+            <div class="head__main-logo">
                 <h1 id="logo">ArmanDEV</h1>
                 <div>
                     <p>Into the Frontend's path.</p>
                 </div>      
-            </div>
-            <!-- <div class="navbar-container">
-                <nav>
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                    </ul>
-                </nav>
-            </div> -->
+            </div> 
         </div>
     </header>
     <!-- Sección Principal -->
@@ -62,12 +55,13 @@
         <main>
             <section>
                 <article>
-                    <div class="title">
+                    <div class="main-container__content">
+                        <div class="main-container__content--title">
                         <h1>Comenzando el Camino</h1>
                         <h2>Un poco de historia sobre mí y mi relación con las computadoras.</h2>
                     </div>
-                    <p class="fecha">05 / 10 / 2024<p/>
                     <div class="contenido">                        
+                        <p id="fecha">05 / 10 / 2024</p>
                         <p>
                             Hoy he comenzado el camino del frontend, será difícil, pero mi objetivo es claro y pretendo llegar alto, por el momento mi meta a corto/mediano plazo es cumplir con la ruta de aprendizaje de Especialización de Frontend Developer en Platzi.
                         </p>
@@ -84,23 +78,9 @@
   También por ese año, tenía un Nokia de los primeros con pantalla touch y plumita tipo stylus, de los que tenían pantalla resistiva, que exasperante era navegar con esa cosa, pero no importaba porque tenía acceso a internet y podía descargar videos.</p>
   <p>En 2013 mi papá llevo una Dell Optiplex gx260 mid tower  del 2002 con un pentium 4 y 2 gb de ram a la casa, la cual me "agandallé" al primer segundo que la vi, a ésta por fin le pude instalar un Linux, qué alegría fue experimentar como un equipo con 11 años de antigüedad, con Windows XP, que se trababa al primer minuto de abrir el navegador, se levantaba de las cenizas para poder darme la oportunidad de tener un flujo de trabajo y navegación decente, todo gracias a lubuntu, mi primera distro de Linux.</p> 
                     </div>
+                </div>
                 </article>
             </section>
         </main>
-        <aside>
-            <div class="bio">
-                    <figure>
-                        <img src="./assets/images/foto.webp" alt="yo">
-                    </figure>
-                    <h3>
-                        ¡Hola Mundo!
-                    </h3>
-                    <p> Que onda Devs! soy Armando, mi familia me dice Rambo (jaja curioso no?), me gusta jugar con computadoras desde hace mucho tiempo, pero hubo un periodo muy grande de mi vida en el que no tuve mucho contacto con ellas, sin embargo mi pasión por los temas tecnológicos siempre estuvo latente, no fue hasta hace 12 años que pude avivar esa chispa de curiosidad.<br>Hoy en día me dedico a reparar euqipo de cómputo, computadoras, desktop y laptop, impresoras, equipos móviles, como celualres y tablets, y una que otra cosa electrónica que me caiga en mi taller, a la par de eso, estoy emprendiendo mi camino en el Desarrollo Web, y espero poder crecer en este mundo tan basto y lleno de cosas sorprendentes.<br>Este blog personal será el reflejo de mi prograso.</p>
-                    <p></p>
-            </div>
-        </aside>
     </div>
-    <!-- div para background testing-->
-<!-- </div>  --> 
-</body>
 </html>
