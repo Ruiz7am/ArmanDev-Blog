@@ -22,7 +22,6 @@
 body {
     margin: 0;
     color: var(--regular-font);
-    /* font-family: var(--regular-font-family); */
     color: var(--regular-font-color);
     font-size: var(--md);
     width: 100%;
