@@ -193,13 +193,13 @@ article {
 .contenido__more a:hover {
     color: blueviolet;
 }
-/* @media (max-width: 1530px) {
+@media (max-width: 1530px) {
     .main-container__bio {
         flex-direction: column;
     }
     .main-container__content {
         flex-direction: column;
-    } */
+    }
 }
 @media (max-width: 640px) {
    .navbar {
@@ -208,10 +208,4 @@ article {
    body {
     display: grid;
    }
-.main-container__bio {
-        flex-direction: column;
-    }
-    .main-container__content {
-        flex-direction: column;
-    }
 }
