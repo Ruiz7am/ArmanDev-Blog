@@ -24,7 +24,7 @@ body {
     color: var(--regular-font);
     color: var(--regular-font-color);
     font-size: var(--md);
-    width: 100%;
+   /* width: 100%;*/
     font-family: var(--regular-font-family);
     font-weight: 400;
     font-style: normal;
