@@ -202,7 +202,7 @@ article {
     }
 }
 @media (max-width: 640px) {
-   .navbar {
+   .header_navbar {
     display: none;
    }
    body {
