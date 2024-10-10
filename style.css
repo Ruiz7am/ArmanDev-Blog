@@ -41,6 +41,12 @@ body {
 
 /* Here starts content styling */ 
 
+/* Titles sizes */
+
+h1 {
+    font-size: 5rem;
+}
+
 /*Header with navbar, logo and social media links section */
 header {
     display: flex;
@@ -132,10 +138,6 @@ main {
     object-fit: cover;
     border-radius: 50%;
 }
-.main-container__bio div h3 {
-    margin: 10px 0 0;
-    font-size: 5rem;
-}
 .main-container__bio>div p {
     text-align: justify;
     text-justify: inter-word;
@@ -163,12 +165,6 @@ article {
     padding: 65px;
     background-color: rgb(255, 255, 255, 0.10);
     border-radius: 25px;
-}
-.main-container__content--title h1 {
-    margin: 10px;
-}
-.main-container__content--title h2 {
-    margin-bottom: 20px;
 }
 #fecha{
     margin: 0;
@@ -225,5 +221,12 @@ footer p{
     .social-container-footer a img {
         width: 45px;
         height: 45px;
+    }
+}
+@media (max-width: 640px) {
+    html {
+        font-size: 62.5%;
+        display: flex;
+        width: 100%;
     }
 }
