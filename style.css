@@ -1,90 +1,54 @@
 /* Version 1.0 del estilo */
 
-/* Reajuste de tamaño de fuente */
+/* FIRST LINES OF CONFIG */
+
+/* Variable declaration */
+:root {
+    --regular-font-color: white;
+    --regular-font-family: "Chakra Petch", sans-serif;
+    --logo-font-family: atmospheric;
+}
+
+/* Font sizing adjust */
 html {
     font-size: 62.5%;
+    display: flex;
+    width: 100%;
 }
 
-/* Reset body */
-body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ------------------------------------------------------------------------------
-
-
-:root {
-    --background: #424040;
-    --regular-font-color: white;
-    --title-font-family: atmospheric;
-    --regular-font-family: "Chakra Petch", sans-serif;
-    --titles: white;
-    --subtitles: white;
- 
-    --min: 14px;
-    --sm: 16px;
-    --md: 18px;
-    --lg: 20px;
-    --xlg: 24px;
-    --xxlg: 28px;
-    --giant: 36px;
-}
+/* Title font */
 @font-face {
     font-family: atmospheric;
     src: url(./assets/fonts/atmospheric.ttf);
 }
+
+/* Reset body and styling */
 body {
+    box-sizing: border-box;
     margin: 0;
-    color: var(--regular-font);
-    color: var(--regular-font-color);
-    font-size: var(--md);
-    width: 100%;
+    padding: 0;
+    /* A partir de aquí hacia abajo modificamos */
+    /* Font styles*/
     font-family: var(--regular-font-family);
     font-weight: 400;
-    font-style: normal;
+    font-size: 2.0rem;
+    color: var(--regular-font-color);
+    /* Background styles */
     background-image: url(./assets/images/background3.webp);
     background-size: cover;
+    background-attachment: fixed;
 }
-h1 {
-    font-size: var(--giant);
-    text-align: center;
-}
-h2 {
-    font-size: var(--xlg);
-    margin: 0;
-    color: var(--subtitles);
-    text-align: right;
-}
-h3 {
-    text-align: center;
-}
-p {
-    font-size: var(--lg)
-}
+
+/* Here starts content styling */ 
+
+/*Header with navbar, logo and social media links section */
 header {
     display: flex;
     flex-direction: column;
+
 }
 .header-navbar {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: rgb(255, 255, 255, 0.10);
     display: flex;
     justify-content: space-between;
 }
@@ -93,7 +57,7 @@ nav ul {
     padding: 10px 25px;
     margin: 5px 10px;
 }
-nav li a img {
+.home-icon {
     width: 35px;
     height: 35px;
 }
@@ -111,14 +75,14 @@ nav li a img {
     width: 35px;
     height: 35px;
 }
+/* Logo */
 .head {
-    display: grid;
-    grid-template-columns: 1fr;
-    color: var(--titles);
-    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-top: 1px solid #353535;
 }
-.head__main-logo {
+.head__main--logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,38 +90,41 @@ nav li a img {
 }
 #logo {
     margin: 0;
-    font-family: var(--title-font-family);
-    font-size: 60px;
+    font-family: var(--logo-font-family);
+    font-size: 6rem;
     margin-bottom: 10px;
-    color: var(--titles);
 }
-.head__main-logo div {
+.head__main--logo div {
     border-top: 1px solid white;
 }
-.head__main-logo div p {
+.head__main--logo div p {
     margin: 15px;
-    font-size: var(--xlg);
+    font-size: 3.8rem;
 }
 
+/* Principal content */
 .main-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    margin: 0 12%;
 }
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .main-container__bio {
-    width: 60%;
-    margin: 65px 0 20px;
+    margin: 40px 0 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 65px;
-    background: rgb(255, 255, 255, 0.15);
-    border-radius: 27px;
+    background-color: rgb(255, 255, 255, 0.10);
+    border-radius: 25px;
+}
+.main-container__bio figure {
+    margin: 0 60px;
 }
 .main-container__bio figure img {
     width: 400px;
@@ -167,39 +134,35 @@ main {
 }
 .main-container__bio div h3 {
     margin: 10px 0 0;
-    font-size: var(--giant)
+    font-size: 5rem;
 }
-.main-container__bio div p {
+.main-container__bio>div p {
     text-align: justify;
     text-justify: inter-word;
 }
 section {
     margin: 0;
     padding: 0;
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 article {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
-.main-container__content{
-    width: 60%;
+.main-container__content {
     margin: 20px 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 65px;
-    background: rgb(255, 255, 255, 0.15);
-    border-radius: 27px;
+    background-color: rgb(255, 255, 255, 0.10);
+    border-radius: 25px;
 }
 .main-container__content--title h1 {
     margin: 10px;
@@ -207,35 +170,60 @@ article {
 .main-container__content--title h2 {
     margin-bottom: 20px;
 }
-#fecha {
+#fecha{
     margin: 0;
-    font-size: var(--sm);
+    font-size: 1.5rem;
 }
-.contenido p {
+.content p {
     text-align: justify;
     text-justify: inter-word;
 }
-.contenido__more a {
+.content__more a {
     text-decoration: none;
     color: var(--regular-font-color);
 }
-.contenido__more a:hover {
+.content__more a:hover {
     color: blueviolet;
 }
-@media (max-width: 640px) {
-   .header-navbar {
+
+footer {
+    margin-bottom: 50px;
+}
+footer p{
+    text-align: center;
+    margin: 50px 100px;
+}
+.social-container-footer {
     display: none;
-   }
-   body {
-    display: grid;
-  } 
-   html {
-    box-sizing: border-box;
-   }
-   .main-container__bio {
+}
+@media (max-width: 1400px) {
+    .header-navbar {
+        display: none;
+    }
+    .main-container__bio {
         flex-direction: column;
     }
     .main-container__content {
         flex-direction: column;
     }
-} */
+    footer {
+        margin-bottom: 50px;
+    }
+    footer p{
+        text-align: center;
+        margin: 50px 100px;
+    }
+    .social-container-footer {
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        margin: 25px;
+    }
+    .social-container-footer a {
+        text-decoration: none;
+    }
+    .social-container-footer a img {
+        width: 45px;
+        height: 45px;
+    }
+}
