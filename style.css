@@ -16,7 +16,7 @@ html {
     width: 100%;
 }
 
-/* Title font */
+/* Logo font */
 @font-face {
     font-family: atmospheric;
     src: url(./assets/fonts/atmospheric.ttf);
@@ -45,7 +45,12 @@ body {
 
 h1 {
     font-size: 5rem;
+    text-align: center;
 }
+h2 {
+    font-size: 3rem;
+    text-align: center;
+} 
 
 /*Header with navbar, logo and social media links section */
 header {
