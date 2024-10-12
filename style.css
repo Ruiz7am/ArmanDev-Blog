@@ -15,7 +15,26 @@ Secuencia de diseño para
 }
 
 html {
-	font-size: 62.5%
+	font-size: 62.5%;
+}
+body {
 }
 
 /* Header */
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	min-width: 320px;
+	height: 120px;
+	
+}
+.social-container img {
+	width: 20px;
+	height: 20px;
+}
+.header-navbar img {
+	width: 20px;
+	height: 20px;
+}
