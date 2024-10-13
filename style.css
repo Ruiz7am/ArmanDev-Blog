@@ -7,34 +7,160 @@ Secuencia de diseño para
 5. Otros
 */
 
+/* fonts */
+@font-face {
+	font-family: atmospheric;
+	src: url(./assets/fonts/atmospheric.ttf);
+}
+/* Variables */
+:root {
+	--skin-red: #e05c55;
+	--neon-green: rgb(42, 232, 153);
+	--neon-blue: #60dfe6;
+	--dark-blue: #1d1a24
+}
+
 /* Universal config */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 html {
 	font-size: 62.5%;
+	font-family: "Kanit", sans-serif;
 }
 body {
+	background: linear-gradient(150deg, #33191a -12%, #0e0f15 63.7%);
+	background-repeat: no-repeat;
+	height: 100%;
 }
-
 /* Header */
 header {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
+	margin:0 auto;
 	width: 100%;
 	min-width: 320px;
+	max-width: 600px;
+	padding: 15px 20px 8px;
+}
+.logo-container {
+	margin-left: 10px;
+	color: var(--neon-green);
+	text-align: center;
+	width: 40%;
+	max-width: 120px;
+	text-shadow: rgba(96, 223, 230, 0.25) 2px 0px 2px, rgba(96, 223, 230, 0.25) 1px 2px 5px;
+}
+.logo-container .logo-up {
+	margin-bottom: 4px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid var(--neon-green);
+	font-family: atmospheric, sans-serif;
+	font-size: 1.5rem;
+}
+nav {
+	display: flex;
+	width: 60%;
+	align-items: center;
+}
+.navbar-container {
+	display: flex;
+	justify-content: space-evenly;
+	top: 20px;
+	width: 100%;
+	max-width: 330px;
+	list-style: none;
+	text-align: center;
+}
+.navbar-container span {
+	font-size: 1.5rem;
+	color: var(--skin-red);
+}
+.navbar-container span:hover {
+	color: var(--neon-blue);
+}
+.navbar-container span:active {
+	color: var(--neon-blue);
+}
+main {
+	width: 100%;
+	border-top: 1px solid var(--skin-red);
+}
+section {
+	width: 90%;
+	margin: 20px auto 30px;
+	min-width: 320px;
+	max-width: 600px;
+}
+.bio-container {
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: var(--dark-blue);
+	border: 1px solid var(--neon-blue);
+	border-radius: 5px;
+	box-shadow: rgba(96, 223, 230, 0.19) 0px 10px 20px, rgba(96, 223, 230, 0.23) 0px 6px 6px;
+	color: white;
+	text-align: justify;
+	text-justify: inter-word;
+}
+.bio-container .profile-photo-container{
+	width: 120px;
+	margin: 10px auto 5px;
+}
+.bio-container .profile-photo-container img {
+	width: 120px;
 	height: 120px;
+	object-fit: cover;
+	border: 1px solid #884245;
+	border-radius: 50%;
+}
+.bio-container h2 {
+	margin-bottom: 10px;
+	text-align: center;
+	color: var(--neon-blue);
+	font-size: 2.2rem;
+}
+.bio-container p {
+	font-size: 1.5rem;
+}
+
+.article-container {
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: var(--dark-blue);
+	border: 1px solid var(--neon-blue);
+	border-radius: 5px;
+	box-shadow: rgba(96, 223, 230, 0.19) 0px 10px 20px, rgba(96, 223, 230, 0.23) 0px 6px 6px;
+	color: white;
+	text-align: justify;
+	text-justify: inter-word;
+}
+.article-container .article-image-container{
+	width: 120px;
+	margin: 10px auto 5px;
+}
+.article-container .article-image-container img {
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	border: 1px solid #884245;
 	
 }
-.social-container img {
-	width: 20px;
-	height: 20px;
+.article-container h2 {
+	margin-bottom: 10px;
+	text-align: center;
+	color: var(--neon-blue);
+	font-size: 2.2rem;
 }
-.header-navbar img {
-	width: 20px;
-	height: 20px;
+.article-container h3 {
+	
+}
+.article-container p {
+	font-size: 1.5rem;
 }

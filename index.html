@@ -5,101 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>ArmanDEV</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>ArmanDEV</title>
 </head>
 <body>
-    <!-- Cabecera -->
     <header>
-        <!-- Redes sociales por arriba del header (logo y navbar) -->
-        <div class="header-navbar">
-            <nav>
-                <ul>
-                    <li><a href="./index.html"><img src="./assets/icons/home-white.svg" alt="home" class="home-icon"></a></li>
-                </ul>
-            </nav>
-            <div class="social-container">
-                    <a href="https://platzi.com/p/ArmandoRuiz/" target="_blank">
-                        <img src="./assets/icons/platzi-white.svg" alt="platzi">
-                    </a>
-                    <a href="https://github.com/Ruiz7am" target="_blank">
-                        <img src="./assets/icons/github-white.svg" alt="github">
-                    </a>
-                    <a href="https://www.linkedin.com/in/ruiz7am" target="_blank">
-                        <img src="./assets/icons/linkedin-white.svg" alt="linkedin">
-                    </a>
-                    <a href="https://x.com/ruiz7am" target="_blank">
-                        <img src="./assets/icons/twitter-white.svg" alt="tweeter">
-                    </a>
-            </div>
+        <div class="logo-container">
+            <h1 class="logo-up">ArmanDEV</h1>
+            <p class="logo-down">Into the Frontend's Path</p>
         </div>
-        <!-- Header: logo y navbar -->
-        <div class="header-logo">
-            <div class="header-logo-container">
-                <h1 class="logo">ArmanDEV</h1>
-                <div>
-                    <p>Into the Frontend's path.</p>
-                </div>      
-            </div> 
-        </div>
+        <nav>
+            <ul class="navbar-container">
+                <li>
+                    <a href="#">
+                        <span class="navbar-container--item home">home</span>
+                    </a>
+                </li>
+                <li><a href="#"><span class="navbar-container--item tutos">tutoriales</span></a></li>
+                <li><a href="#"><span class="navbar-container--item blog">blog</span></a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- Sección Principal -->
     <main>
-        <div class="main-container">
-            <section>
-                <article>
-                    <div class="main-container--bio">
-                        <figure>
-                            <img src="./assets/images/foto.webp" alt="yo">
-                        </figure>
-                        <div>
-                            <h1>
-                                ¡Hola Mundo!
-                            </h1>
-                            <p> Que onda Devs! soy Armando, mi familia me dice Rambo (jaja curioso no?), me gusta jugar con computadoras desde hace mucho tiempo, pero hubo un periodo muy grande de mi vida en el que no tuve mucho contacto con ellas, sin embargo mi pasión por los temas tecnológicos siempre estuvo latente, no fue hasta hace 12 años que pude avivar esa chispa de curiosidad.<br><br>Hoy en día me dedico a reparar equipo de cómputo, computadoras, desktop y laptop, impresoras, equipos móviles, como celulares y tablets, y una que otra cosa electrónica que me caiga en mi taller, a la par de eso, estoy emprendiendo mi camino en el Desarrollo Web, y espero poder crecer en este mundo tan basto y lleno de cosas sorprendentes.<br><br>Este blog personal será el reflejo de mi progreso.</p>
-                        </div>
-                    </div>
-                </article>
-            </section>
-            <section>
-                <article>
-                    <div class="main-container--content">
-                        <div class="titles">
-                            <h1>Comenzando el Camino</h1>
-                            <h2>Un poco de historia sobre mí y mi relación con las computadoras.</h2>
-                        </div>
-                        <div class="content">                        
-                            <p id="fecha">05 / 10 / 2024</p>
-                            <p>
-                                Hoy he comenzado el camino del frontend, será difícil, pero mi objetivo es claro y pretendo llegar alto, por el momento mi meta a corto/mediano plazo es cumplir con la ruta de aprendizaje de Especialización de Frontend Developer en Platzi.
-                            </p>
-                            <p>
-                                Hace ya un tiempo (unos once o doce años aproximadamente), comencé a trastear de nuevo con computadoras, no sé cómo le hacía, pero de una u otra forma conseguía tener una computadora o algo que se le asemejara bastante, ya sean de escritorio o laptops, prestadas o regaladas, incluso tablets chinas, mi objetivo era aprender sobre estos aparatos tan extraordinarios...</p>
-                                <p class="more"><a href="./blog1.html">leer más...</a></p>
-                        </div>
-                    </div>
-                </article>
-            </section>
-        </div> 
+        <section>
+            <article class="bio-container">
+                <figure class="profile-photo-container">
+                    <img src="./assets/images/foto.webp" alt="Armando">
+                </figure>
+                <h2>¡Hola Mundo!</h2>
+                <p>Que onda Devs! soy Armando, mi familia me dice Rambo (jaja curioso no?), me gusta jugar con computadoras desde hace mucho tiempo, pero hubo un periodo muy grande de mi vida en el que no tuve mucho contacto con ellas, sin embargo mi pasión por los temas tecnológicos siempre estuvo latente, no fue hasta hace 12 años que pude avivar esa chispa de curiosidad.<br><br>Hoy en día me dedico a reparar equipo de cómputo, computadoras, desktop y laptop, impresoras, equipos móviles, como celulares y tablets, y una que otra cosa electrónica que me caiga en mi taller, a la par de eso, estoy emprendiendo mi camino en el Desarrollo Web, y espero poder crecer en este mundo tan basto y lleno de cosas sorprendentes.<br><br>Este blog personal será el reflejo de mi progreso.</p>
+            </article>
+        </section>
+        <section>
+            <article class="article-container">
+                <!-- <figure class="article-image-container">
+                    <img src="#" alt="Armando">
+                </figure> -->
+                <h2>¡Hola Mundo!</h2>
+                <h3></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam iure vel praesentium, sint fugiat rerum provident minus laboriosam a dignissimos quidem assumenda odit? Quis repellendus dolor ut tempore similique.</p>
+            </article>
+        </section>
     </main>
-    <footer>
-        <div class="social-container-footer">
-            <a href="https://platzi.com/p/ArmandoRuiz/" target="_blank">
-                <img src="./assets/icons/platzi-white.svg" alt="platzi">
-            </a>
-            <a href="https://github.com/Ruiz7am" target="_blank">
-                <img src="./assets/icons/github-white.svg" alt="github">
-            </a>
-            <a href="https://www.linkedin.com/in/ruiz7am" target="_blank">
-                <img src="./assets/icons/linkedin-white.svg" alt="linkedin">
-            </a>
-            <a href="https://x.com/ruiz7am" target="_blank">
-                <img src="./assets/icons/twitter-white.svg" alt="tweeter">
-            </a>
-        </div>
-        <p>Como y quien programa los programas para programar programas 🤔 </p>
-    </footer>
 </body>
 </html>
